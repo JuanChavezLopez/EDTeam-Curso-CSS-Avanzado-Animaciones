@@ -1,0 +1,39 @@
+.menu , [class^="menu--"] {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu--child {
+    position: absolute;
+    transform-origin: top center;
+    transform: scale(1 ,0); /* desaparecemos los links */
+    transition: transform .9s;
+
+}
+
+[class ^="menu__item"] {
+    background-color: #222;
+}
+
+[class ^="menu__item"]:hover {
+    background: #333;
+}
+
+[class ^="menu__item"]:hover .menu--child {
+    /* display: block; */
+    transform: scale(1,1);
+}
+
+
+[class^="menu__link"] {
+    display: block;
+    text-decoration: none;
+    padding: .8em 1.2em;
+    color: #ddd;
+}
