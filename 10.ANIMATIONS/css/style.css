@@ -1,0 +1,28 @@
+.ball {
+    width: 200px;
+    height: 200px;
+    background: red;
+    border-radius: 50%;
+    animation-name: change-color;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 2000ms;
+    border: 2px solid #000;
+    /* left: 0; */
+}
+
+@keyframes change-color {
+    0% {
+        position: relative;
+        left: 0;
+    }
+
+    50% {
+        background: green;
+    }
+
+    100% {
+        background: yellow;
+        transform: translate(calc(100vw - 100%));
+    }
+}

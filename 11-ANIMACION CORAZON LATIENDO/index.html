@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="button" id="button">animar</div>
+        <div class="ball ease">ease</div>
+        <div class="ball ease-in">ease-in</div>
+        <div class="ball ease-in-out">ease-in-out</div>
+        <div class="ball ease-out">ease-out</div>
+        <div class="ball linear">linear</div>
+        <div class="heart"></div>
+
+
+        <script>
+            document.getElementById('button').addEventListener('click', () => {
+                document.body.classList.toggle('animate');
+            })
+        </script>
+    </body>
+
+</html>

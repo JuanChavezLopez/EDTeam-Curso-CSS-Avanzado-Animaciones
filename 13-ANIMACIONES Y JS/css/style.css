@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+p {
+  margin: 1em auto;
+}
+
+p + p {
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 auto;
+  background: rgb(209, 86, 24);
+  color: #fff;
+  padding: .5em 2em;
+  cursor: pointer;
+ }
+
+.animar {
+  animation: change-color 1s infinite ease;
+}
+
+h1.animar:hover {
+  animation-play-state: paused;
+}
+
+@keyframes change-color {
+  to {
+    /* transform: scale(1.2); */
+    background: rgb(104, 214, 48);
+  }
+}
