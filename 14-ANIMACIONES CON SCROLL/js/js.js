@@ -2,6 +2,8 @@ let images = Array.from(document.querySelectorAll('img'));
 let imagesScrollTop = images.map( image => 
       image.getBoundingClientRect().top - innerHeight)
 
+console.log(imagesScrollTop);
+
 window.addEventListener('scroll', () => {
   imagesScrollTop.forEach( (el,i) => {
     if (scrollY >= el) {
