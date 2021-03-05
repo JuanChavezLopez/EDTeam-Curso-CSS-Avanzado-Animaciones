@@ -1,7 +1,7 @@
 p {
-     background-color: yellow;
-     padding: 1em;
-     transition: all .5s;
+    background-color: yellow;
+    padding: 1em;
+    transition: all .5s;
 }
 
 .animate .primero {
@@ -33,7 +33,6 @@ strong {
     padding: 1em;
     justify-content: space-between;
 }
-
 
 .item {
     color: red;

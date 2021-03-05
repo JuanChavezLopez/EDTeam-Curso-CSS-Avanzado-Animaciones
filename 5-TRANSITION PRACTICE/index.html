@@ -7,9 +7,17 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="ball"></div>
+        <div id="ball" class="ball"></div>
         <button class="button" id="button">Animar</button>
         
     </body>
+    <script>
+        document.getElementById('button').addEventListener('click', e => {
+                document.body.classList.add('animate');
+                document.getElementById('ball').addEventListener('transitionend', e => {
+                    if(e.elapsedTime === 4) document.body.classList.remove('animate');
+                });
+        });
+    </script>
 
 </html>

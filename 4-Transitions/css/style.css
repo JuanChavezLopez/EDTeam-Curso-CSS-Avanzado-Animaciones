@@ -13,7 +13,7 @@ a {
     margin: auto;
     left: 0;
     position: relative;
-    transition: background-color .5s .2S, color .5s .5s, transform .2s, left .5s .4s;
+    transition: background-color .5s .2S, color .5s .5s, transform .2s, left 4s .4s;
 }
 
 p {

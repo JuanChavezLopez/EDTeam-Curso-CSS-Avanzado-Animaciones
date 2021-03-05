@@ -11,12 +11,11 @@
     }
 } */
 
-
 .circle {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: red;
+    /* background-color: red; */
     border: 5px solid #000;
 }
 
@@ -35,8 +34,8 @@
 
 
 .circle2 {
-    animation: circle2 1s infinite alternate linear;
     background-color: green;
+    animation: circle2 1s infinite alternate linear;
     will-change: transform;
 }
 

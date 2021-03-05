@@ -1,25 +1,30 @@
 .ball {
     width: 100px;
     height: 100px;
-    background-color: red;
+    background-color: tomato;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     left: 0;
-    transition: left .5s;
     top: 0;
-    transition: left .5s, top .5s .5s;
-
+    transition: left .5s,
+                background-color .5s,
+                top .5s .5s;
 }
 
-body{
- min-height: 100vh;
-}
-
-body:hover .ball {
-    left: calc(100vw - 125px);
-    top:  calc(100vh - 100px);
-}
-
-button {
+ .animate .ball{
+    transition: left 2s,
+                top 2s 2s,
+                background-color 4s;
+    left: calc(100vw - 100px);
+    top: calc(100vh - 100px);
+    background-color: green;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  button {
     margin: auto;
-}
+  }

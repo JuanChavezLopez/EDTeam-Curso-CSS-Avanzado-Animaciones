@@ -12,10 +12,10 @@
 }
 
 @keyframes change-color {
-    0% {
+    /* 0% {
         position: relative;
         left: 0;
-    }
+    } */
 
     50% {
         background: green;
